@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Messages\MessageService.cs~RF1c80a8a4.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Scrutor" Version="3.3.0" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dotnet.GraphQL.CrossCutting\Dotnet.GraphQL.CrossCutting.csproj" />
+    <ProjectReference Include="..\Dotnet.GraphQL.Domain\Dotnet.GraphQL.Domain.csproj" />
+    <ProjectReference Include="..\Dotnet.GraphQL.Repositories.Abstractions\Dotnet.GraphQL.Repositories.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
